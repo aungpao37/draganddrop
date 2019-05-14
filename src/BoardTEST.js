@@ -1,10 +1,10 @@
 import React, { Component } from "react";
-import Board from "./Board";
-import BoardTEST from "./BoardTEST";
+import TEST from "./TEST";
 import Knight from "./Knight";
-import Rowtitle from "./TEST555";
+import Board from "./Board";
 
-export default class App extends Component {
+import Deskplay from "./deskplay";
+export default class BoardTEST extends Component {
   state = {
     timedatas: [
       { id: "0", title: "8.00-9.00" },
@@ -26,8 +26,18 @@ export default class App extends Component {
       { id: "days6", titleday: "เสาร์" }
     ]
   };
-
+  renderTEST(i) {
+    const x = i % 8;
+    const y = Math.floor(i / 8);
+    return <Deskplay x={x}>{this.renderPiece(x, y)}</Deskplay>;
+  }
+  renderPiece(x, y) {
+    const [knightX, knightY] = this.props.knightPosition;
+    if (x === knightX && y === knightY) {
+      return <Knight />;
+    }
+  }
   render() {
-    return <Board knightPosition={[0, 0]} />;
+    return <div>{this.renderTEST(0, 0)}</div>;
   }
 }

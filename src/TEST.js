@@ -1,10 +1,6 @@
 import React, { Component } from "react";
 import Board from "./Board";
-import BoardTEST from "./BoardTEST";
-import Knight from "./Knight";
-import Rowtitle from "./TEST555";
-
-export default class App extends Component {
+export default class TEST extends Component {
   state = {
     timedatas: [
       { id: "0", title: "8.00-9.00" },
@@ -26,8 +22,17 @@ export default class App extends Component {
       { id: "days6", titleday: "เสาร์" }
     ]
   };
-
   render() {
-    return <Board knightPosition={[0, 0]} />;
+    return (
+      <div className="header">
+        <div className="tmp-header">สรุปข้อมูลการ์ด</div>
+        <div className="day-header-3" />
+        {this.state.timedatas.map((timedata, id) => (
+          <div key={id} className="period-header">
+            {timedata.title}
+          </div>
+        ))}
+      </div>
+    );
   }
 }

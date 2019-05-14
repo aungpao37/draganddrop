@@ -13,10 +13,10 @@ setup
 /**/
 body {
   color: #333333;
-  font-family: "Kanit", sans-serif;
+  font-family: 'Kanit', sans-serif;
   padding: 0px !important;
   margin: 0px !important;
-  direction: "ltr";
+  direction: 'ltr';
   font-size: 14px;
 }
 
@@ -841,7 +841,7 @@ section.sec1 {
   padding-bottom: 10px;
 }
 #about h2::after {
-  content: "";
+  content: '';
   background: #652c90;
   display: block;
   height: 3px;
@@ -865,7 +865,7 @@ section.sec1 {
   padding-bottom: 10px;
 }
 #Footter h2::after {
-  content: "";
+  content: '';
   background: #652c90;
   display: block;
   height: 2px;
@@ -880,7 +880,7 @@ section.sec1 {
   margin-bottom: 50px;
 }
 .col-2::after {
-  content: "";
+  content: '';
   background: #652c90;
   display: block;
   height: 170px;
@@ -1029,7 +1029,7 @@ ul {
   }
 }
 .container:after {
-  content: "\0020";
+  content: '\0020';
   display: block;
   height: 0;
   clear: both;
@@ -1184,13 +1184,13 @@ ul {
 }
 .page-bar:before,
 .page-bar:after {
-  content: " ";
+  content: ' ';
   display: table;
 }
 
 .page-container:before,
 .page-container:after {
-  content: " ";
+  content: ' ';
   display: table;
 }
 .ReactModal__Overlay.ReactModal__Overlay--after-open {
@@ -1231,7 +1231,7 @@ ul {
 label {
   font-weight: 300;
 }
-input[type="text"] {
+input[type='text'] {
   margin: 0;
 }
 .form-group > input {
@@ -1301,7 +1301,7 @@ select2-container--default .select2-search--dropdown .select2-search__field {
   background-color: #5897fb;
   color: #fff;
 }
-.select2-container--default .select2-results__option[aria-selected="true"] {
+.select2-container--default .select2-results__option[aria-selected='true'] {
   background-color: #ddd;
 }
 .select2-results__options {
@@ -1325,7 +1325,9 @@ select2-container--default .select2-search--dropdown .select2-search__field {
 .item-container.second {
   height: 33px;
 }
-
+.login-bg {
+  background-image: url('../image/page-login1.jpg');
+}
 main {
   padding: 50px 10px;
   overflow-x: auto;
